@@ -1,0 +1,41 @@
+<!--Declaração da versão do html-->
+<!DOCTYPE html>
+<!--Inicio do código e a linguagem a ser trabalhada no navegador-->
+<html lang="pt-br">
+
+	<head>
+		<title>Trabalho de DSW</title>
+	 	<meta charset="UTF-8"> 
+		<!--tag que importa o arquivo js externo -->
+		<script type="text/javascript" src="logico.js">
+		</script>
+		<!--tag que importa o arquivo css externo -->
+		<link rel="stylesheet" type="text/css" href="stilo.css">
+	</head>
+	<!-- corpo da página-->
+	<body>
+	    <!-- inicio da div que contém os campos de coleta de dados, exibição de dados e o botão-->
+		<div id="corpo-form">
+			
+		<br><img src="previ.jpg" width="50%">
+
+		<h3>DIGITE SEU NOME:</h3>
+		<!--input que coleta o nome-->
+		<input type="text" id="iDnome" placeholder="Ex: Thiago Moura"  onkeyup="validar(this,'text');">
+		<h3>DIGITE SUA DATA DE NASCIMENTO:</h3>
+		<!--input que coleta a data de nascimento-->
+		<input type="date" id="iDdata">
+		<br>
+		<!--input que constroi o botão capaz de chamar a função do javascript-->
+		<input type="button" value = "Descubra seu signo" onclick="descubra()">
+		<br>
+		<!--label que consegue exibir o signo obtido a partir da função do javascript-->
+		<label id="label3">-</label>
+		<br>
+
+	    </div>
+
+	<div class="container">Developed by: Pedro Gonçalves dos Santos and Thiago Moura</div>
+	</body>
+
+</html>
